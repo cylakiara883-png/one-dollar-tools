@@ -77,6 +77,72 @@
     </div>
   </section>
 
+
+<div class="tool-workspaces">
+
+  <div class="tool-card" id="tool1">
+    <h2>✍️ AI Text Generator</h2>
+    <p>Generate useful texts for your work.</p>
+    <textarea id="textPrompt" placeholder="Describe the text you want..."></textarea>
+    <button onclick="generateText()">Generate text</button>
+    <textarea id="textResult" placeholder="Your result will appear here..."></textarea>
+    <button onclick="copyResult('textResult')">Copy result</button>
+  </div>
+
+  <div class="tool-card" id="tool2">
+    <h2>📄 PDF Creator</h2>
+    <p>Create a PDF document from your text.</p>
+    <textarea id="pdfText" placeholder="Write your document here..."></textarea>
+    <button onclick="createPDF()">Download PDF</button>
+  </div>
+
+  <div class="tool-card" id="tool3">
+    <h2>🌍 Translator</h2>
+    <p>Translate text between languages.</p>
+    <textarea id="translateInput" placeholder="Enter your text..."></textarea>
+    <select id="translateLanguage">
+      <option value="en">English</option>
+      <option value="fr">French</option>
+      <option value="es">Spanish</option>
+      <option value="de">German</option>
+      <option value="pt">Portuguese</option>
+    </select>
+    <button onclick="translateText()">Translate</button>
+    <textarea id="translateResult" placeholder="Translation..."></textarea>
+  </div>
+
+  <div class="tool-card" id="tool4">
+    <h2>📝 CV Generator</h2>
+    <p>Create a simple professional CV.</p>
+    <input id="cvName" placeholder="Full name">
+    <input id="cvEmail" placeholder="Email">
+    <input id="cvJob" placeholder="Professional title">
+    <textarea id="cvExperience" placeholder="Your experience"></textarea>
+    <textarea id="cvEducation" placeholder="Your education"></textarea>
+    <button onclick="generateCV()">Create my CV</button>
+    <div id="cvResult"></div>
+  </div>
+
+  <div class="tool-card" id="tool5">
+    <h2>📱 QR Code Generator</h2>
+    <p>Create a QR code for any link or text.</p>
+    <input id="qrInput" placeholder="Enter a link or text">
+    <button onclick="generateQR()">Generate QR Code</button>
+    <div id="qrResult"></div>
+  </div>
+
+  <div class="tool-card" id="tool6">
+    <h2>🖼️ Image Compressor</h2>
+    <p>Reduce your image file size.</p>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="compressImage()">Compress image</button>
+    <div id="imageResult"></div>
+  </div>
+
+</div>
+</section>
+
+
   <section id="pricing" class="pricing">
     <h2>Simple pricing</h2>
     <div class="price-card">
