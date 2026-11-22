@@ -261,3 +261,100 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ONE DOLLAR TOOLS - WORKSPACE DESIGN */
+
+.tool-workspaces {
+  padding: 50px 7%;
+  background: #f8f6ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.tool-workspaces .tool-card {
+  background: #ffffff;
+  padding: 28px;
+  border: 1px solid #e9e0fa;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #21164b0c;
+}
+
+.tool-workspaces h2 {
+  font-size: 23px;
+  color: #21164b;
+  margin-bottom: 10px;
+}
+
+.tool-workspaces p {
+  color: #777080;
+  margin-bottom: 15px;
+}
+
+.tool-workspaces textarea,
+.tool-workspaces input,
+.tool-workspaces select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #ded6eb;
+  border-radius: 10px;
+  background: #fcfbff;
+  color: #21164b;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.tool-workspaces textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.tool-workspaces button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #8247e5;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tool-workspaces button:hover {
+  background: #6530c2;
+}
+
+.tool-workspaces img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+.tool-workspaces a {
+  color: #8247e5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#cvResult {
+  padding: 20px;
+  margin-top: 15px;
+  border: 1px solid #e9e0fa;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 750px) {
+  .tool-workspaces {
+    grid-template-columns: 1fr;
+    padding: 35px 5%;
+  }
+
+  .tool-workspaces .tool-card {
+    padding: 22px;
+  }
+}
